@@ -1,0 +1,6 @@
+com\example\contact\SecurityTest.class
+com\example\contact\ContactServiceMockTest.class
+com\example\contact\ContactBuilderTest.class
+com\example\contact\ContactServiceTest.class
+com\example\contact\ContactValidatorTest.class
+com\example\contact\ContactTest.class
