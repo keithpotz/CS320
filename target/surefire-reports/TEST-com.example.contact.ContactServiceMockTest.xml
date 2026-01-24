@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.contact.ContactServiceMockTest" time="0.803" tests="17" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.contact.ContactServiceMockTest" time="0.79" tests="17" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947\surefirebooter-20260124163319052_3.jar C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947 2026-01-24T16-33-18_801-jvmRun1 surefire-20260124163319052_1tmp surefire_0-20260124163319052_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824\surefirebooter-20260124175630340_3.jar C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824 2026-01-24T17-56-30_033-jvmRun1 surefire-20260124175630340_1tmp surefire_0-20260124175630340_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\keith\Documents\GitHub\CS320\target\test-classes;C:\Users\keith\Documents\GitHub\CS320\target\classes;C:\Users\keith\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\keith\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\keith\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\keith\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\keith\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\keith\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\keith\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\keith\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\keith\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\keith\.m2\repository\org\mockito\mockito-core\5.8.0\mockito-core-5.8.0.jar;C:\Users\keith\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\keith\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\keith\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\keith\.m2\repository\org\mockito\mockito-junit-jupiter\5.8.0\mockito-junit-jupiter-5.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947\surefirebooter-20260124163319052_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824\surefirebooter-20260124175630340_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -58,10 +58,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testDeleteContact_NotFoundThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.753">
-    <system-out><![CDATA[2026-01-24 16:33:20.282 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.294 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: 99999
-2026-01-24 16:33:20.296 [main] WARN  AUDIT - Delete attempted for non-existent contact: 99999
+  <testcase name="testDeleteContact_NotFoundThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.736">
+    <system-out><![CDATA[2026-01-24 17:56:31.550 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.565 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: 99999
+2026-01-24 17:56:31.568 [main] WARN  AUDIT - Delete attempted for non-existent contact: 99999
 ]]></system-out>
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\keith\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
@@ -70,97 +70,97 @@ WARNING: Dynamic loading of agents will be disallowed by default in a future rel
 ]]></system-err>
   </testcase>
   <testcase name="testGetAllContacts_Success" classname="com.example.contact.ContactServiceMockTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.304 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.304 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving all contacts
-2026-01-24 16:33:20.305 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieved 2 contacts
+    <system-out><![CDATA[2026-01-24 17:56:31.579 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.581 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving all contacts
+2026-01-24 17:56:31.581 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieved 2 contacts
 ]]></system-out>
   </testcase>
   <testcase name="testAddContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.004">
-    <system-out><![CDATA[2026-01-24 16:33:20.306 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.307 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
-2026-01-24 16:33:20.307 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
-2026-01-24 16:33:20.308 [main] INFO  c.e.c.service.ContactServiceImpl - Contact added successfully: ID=12345
+    <system-out><![CDATA[2026-01-24 17:56:31.583 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.583 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
+2026-01-24 17:56:31.583 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
+2026-01-24 17:56:31.585 [main] INFO  c.e.c.service.ContactServiceImpl - Contact added successfully: ID=12345
 ]]></system-out>
   </testcase>
   <testcase name="testGetContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.310 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.311 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: 12345
+    <system-out><![CDATA[2026-01-24 17:56:31.588 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.588 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: 12345
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateContact_NotFoundThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.312 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.312 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 99999
-2026-01-24 16:33:20.313 [main] WARN  AUDIT - Update attempted for non-existent contact: 99999
+  <testcase name="testUpdateContact_NotFoundThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.003">
+    <system-out><![CDATA[2026-01-24 17:56:31.591 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.592 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 99999
+2026-01-24 17:56:31.593 [main] WARN  AUDIT - Update attempted for non-existent contact: 99999
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteContact_NullIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.314 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.315 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: null
-2026-01-24 16:33:20.315 [main] WARN  AUDIT - Security: Attempted to delete contact with null/blank ID
+  <testcase name="testDeleteContact_NullIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.594 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.595 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: null
+2026-01-24 17:56:31.595 [main] WARN  AUDIT - Security: Attempted to delete contact with null/blank ID
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateContact_NoFieldsProvided" classname="com.example.contact.ContactServiceMockTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.316 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.317 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 12345
-2026-01-24 16:33:20.317 [main] DEBUG c.e.c.service.ContactServiceImpl - No fields to update for contact: 12345
+  <testcase name="testUpdateContact_NoFieldsProvided" classname="com.example.contact.ContactServiceMockTest" time="0.001">
+    <system-out><![CDATA[2026-01-24 17:56:31.596 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.596 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 12345
+2026-01-24 17:56:31.597 [main] DEBUG c.e.c.service.ContactServiceImpl - No fields to update for contact: 12345
 ]]></system-out>
   </testcase>
-  <testcase name="testGetContact_NotFound" classname="com.example.contact.ContactServiceMockTest" time="0.004">
-    <system-out><![CDATA[2026-01-24 16:33:20.320 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.320 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: 99999
+  <testcase name="testGetContact_NotFound" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.598 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.599 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: 99999
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.323 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.324 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: 12345
-2026-01-24 16:33:20.324 [main] INFO  c.e.c.service.ContactServiceImpl - Contact deleted: ID=12345
+  <testcase name="testDeleteContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.601 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.602 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact: 12345
+2026-01-24 17:56:31.602 [main] INFO  c.e.c.service.ContactServiceImpl - Contact deleted: ID=12345
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateContact_NullIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.325 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.326 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: null
-2026-01-24 16:33:20.326 [main] WARN  AUDIT - Security: Attempted to update contact with null/blank ID
+  <testcase name="testUpdateContact_NullIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.604 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.604 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: null
+2026-01-24 17:56:31.604 [main] WARN  AUDIT - Security: Attempted to update contact with null/blank ID
 ]]></system-out>
   </testcase>
   <testcase name="testAddContact_NullThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.328 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.328 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
-2026-01-24 16:33:20.328 [main] WARN  AUDIT - Security: Attempted to add null contact
+    <system-out><![CDATA[2026-01-24 17:56:31.606 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.607 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
+2026-01-24 17:56:31.607 [main] WARN  AUDIT - Security: Attempted to add null contact
 ]]></system-out>
   </testcase>
   <testcase name="testServiceRejectsNullRepository" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.330 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+    <system-out><![CDATA[2026-01-24 17:56:31.609 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
 ]]></system-out>
   </testcase>
   <testcase name="testAddContact_DuplicateThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.003">
-    <system-out><![CDATA[2026-01-24 16:33:20.330 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.332 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
-2026-01-24 16:33:20.332 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
-2026-01-24 16:33:20.332 [main] WARN  AUDIT - Duplicate contact ID attempted: 12345
+    <system-out><![CDATA[2026-01-24 17:56:31.611 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.612 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to add contact
+2026-01-24 17:56:31.612 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
+2026-01-24 17:56:31.612 [main] WARN  AUDIT - Duplicate contact ID attempted: 12345
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteContact_BlankIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.334 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.334 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact:    
-2026-01-24 16:33:20.334 [main] WARN  AUDIT - Security: Attempted to delete contact with null/blank ID
+  <testcase name="testDeleteContact_BlankIdThrowsException" classname="com.example.contact.ContactServiceMockTest" time="0.003">
+    <system-out><![CDATA[2026-01-24 17:56:31.615 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.615 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to delete contact:    
+2026-01-24 17:56:31.615 [main] WARN  AUDIT - Security: Attempted to delete contact with null/blank ID
 ]]></system-out>
   </testcase>
-  <testcase name="testGetAllContacts_EmptyList" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.335 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.336 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving all contacts
-2026-01-24 16:33:20.336 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieved 0 contacts
+  <testcase name="testGetAllContacts_EmptyList" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.617 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.617 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving all contacts
+2026-01-24 17:56:31.617 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieved 0 contacts
 ]]></system-out>
   </testcase>
   <testcase name="testGetContact_NullIdReturnsNull" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.337 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.337 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: null
-2026-01-24 16:33:20.338 [main] WARN  c.e.c.service.ContactServiceImpl - Attempted to get contact with null/blank ID
+    <system-out><![CDATA[2026-01-24 17:56:31.618 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.619 [main] DEBUG c.e.c.service.ContactServiceImpl - Retrieving contact: null
+2026-01-24 17:56:31.619 [main] WARN  c.e.c.service.ContactServiceImpl - Attempted to get contact with null/blank ID
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.339 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
-2026-01-24 16:33:20.340 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 12345
-2026-01-24 16:33:20.340 [main] INFO  c.e.c.service.ContactServiceImpl - Contact updated: ID=12345
+  <testcase name="testUpdateContact_Success" classname="com.example.contact.ContactServiceMockTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.620 [main] INFO  c.e.c.service.ContactServiceImpl - ContactServiceImpl initialized
+2026-01-24 17:56:31.620 [main] DEBUG c.e.c.service.ContactServiceImpl - Attempting to update contact: 12345
+2026-01-24 17:56:31.621 [main] INFO  c.e.c.service.ContactServiceImpl - Contact updated: ID=12345
 ]]></system-out>
   </testcase>
 </testsuite>

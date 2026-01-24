@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947\surefirebooter-20260124163319052_3.jar C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947 2026-01-24T16-33-18_801-jvmRun1 surefire-20260124163319052_1tmp surefire_0-20260124163319052_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824\surefirebooter-20260124175630340_3.jar C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824 2026-01-24T17-56-30_033-jvmRun1 surefire-20260124175630340_1tmp surefire_0-20260124175630340_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\keith\Documents\GitHub\CS320\target\test-classes;C:\Users\keith\Documents\GitHub\CS320\target\classes;C:\Users\keith\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\keith\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\keith\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\keith\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\keith\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\keith\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\keith\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\keith\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\keith\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;C:\Users\keith\.m2\repository\org\mockito\mockito-core\5.8.0\mockito-core-5.8.0.jar;C:\Users\keith\.m2\repository\net\bytebuddy\byte-buddy\1.14.10\byte-buddy-1.14.10.jar;C:\Users\keith\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.10\byte-buddy-agent-1.14.10.jar;C:\Users\keith\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\keith\.m2\repository\org\mockito\mockito-junit-jupiter\5.8.0\mockito-junit-jupiter-5.8.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\keith\AppData\Local\Temp\surefire7004114768261696947\surefirebooter-20260124163319052_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\keith\AppData\Local\Temp\surefire14093702487738614824\surefirebooter-20260124175630340_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -58,54 +58,54 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testValidatePhone_Null" classname="com.example.contact.ContactValidatorTest" time="0"/>
+  <testcase name="testValidatePhone_Null" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
   <testcase name="testValidateAddress_Blank" classname="com.example.contact.ContactValidatorTest" time="0"/>
-  <testcase name="testValidateAddress_Valid" classname="com.example.contact.ContactValidatorTest" time="0.002"/>
+  <testcase name="testValidateAddress_Valid" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
   <testcase name="testValidateContactId_XSSPrevention" classname="com.example.contact.ContactValidatorTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.370 [main] WARN  AUDIT - Security: XSS pattern detected in contactId - input rejected
+    <system-out><![CDATA[2026-01-24 17:56:31.652 [main] WARN  AUDIT - Security: XSS pattern detected in contactId - input rejected
 ]]></system-out>
   </testcase>
-  <testcase name="testValidateContactId_Null" classname="com.example.contact.ContactValidatorTest" time="0.002"/>
-  <testcase name="testValidateAddress_ControlCharacters" classname="com.example.contact.ContactValidatorTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.373 [main] WARN  AUDIT - Security: Control characters detected in address - input rejected
-2026-01-24 16:33:20.373 [main] WARN  AUDIT - Security: Control characters detected in address - input rejected
+  <testcase name="testValidateContactId_Null" classname="com.example.contact.ContactValidatorTest" time="0"/>
+  <testcase name="testValidateAddress_ControlCharacters" classname="com.example.contact.ContactValidatorTest" time="0.002">
+    <system-out><![CDATA[2026-01-24 17:56:31.654 [main] WARN  AUDIT - Security: Control characters detected in address - input rejected
+2026-01-24 17:56:31.655 [main] WARN  AUDIT - Security: Control characters detected in address - input rejected
 ]]></system-out>
   </testcase>
-  <testcase name="testValidateName_Blank" classname="com.example.contact.ContactValidatorTest" time="0"/>
+  <testcase name="testValidateName_Blank" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
   <testcase name="testValidateName_Valid" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
-  <testcase name="testValidateValidContact" classname="com.example.contact.ContactValidatorTest" time="0">
-    <system-out><![CDATA[2026-01-24 16:33:20.376 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
+  <testcase name="testValidateValidContact" classname="com.example.contact.ContactValidatorTest" time="0.001">
+    <system-out><![CDATA[2026-01-24 17:56:31.658 [main] DEBUG c.e.c.validation.ContactValidator - Contact validation passed for ID: 12345
 ]]></system-out>
   </testcase>
-  <testcase name="testValidateAddress_Null" classname="com.example.contact.ContactValidatorTest" time="0"/>
+  <testcase name="testValidateAddress_Null" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
   <testcase name="testValidateAddress_SQLInjectionPrevention" classname="com.example.contact.ContactValidatorTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.378 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
-2026-01-24 16:33:20.378 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
-2026-01-24 16:33:20.379 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
+    <system-out><![CDATA[2026-01-24 17:56:31.660 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
+2026-01-24 17:56:31.660 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
+2026-01-24 17:56:31.660 [main] WARN  AUDIT - Security: SQL injection pattern detected in address - input rejected
 ]]></system-out>
   </testcase>
   <testcase name="testValidateNullContact" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
   <testcase name="testValidatePhone_NonDigits" classname="com.example.contact.ContactValidatorTest" time="0.001">
-    <system-out><![CDATA[2026-01-24 16:33:20.381 [main] WARN  AUDIT - Security: Invalid phone number format attempted
-2026-01-24 16:33:20.381 [main] WARN  AUDIT - Security: Invalid phone number format attempted
+    <system-out><![CDATA[2026-01-24 17:56:31.661 [main] WARN  AUDIT - Security: Invalid phone number format attempted
+2026-01-24 17:56:31.662 [main] WARN  AUDIT - Security: Invalid phone number format attempted
 ]]></system-out>
   </testcase>
   <testcase name="testValidateContactId_Blank" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
-  <testcase name="testValidateContactId_Valid" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
+  <testcase name="testValidateContactId_Valid" classname="com.example.contact.ContactValidatorTest" time="0"/>
   <testcase name="testValidateName_InvalidCharacters" classname="com.example.contact.ContactValidatorTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.384 [main] WARN  AUDIT - Security: Invalid characters in firstName - value contained non-alphabetic characters
-2026-01-24 16:33:20.384 [main] WARN  AUDIT - Security: Invalid characters in firstName - value contained non-alphabetic characters
-2026-01-24 16:33:20.384 [main] WARN  AUDIT - Security: XSS pattern detected in firstName - input rejected
+    <system-out><![CDATA[2026-01-24 17:56:31.664 [main] WARN  AUDIT - Security: Invalid characters in firstName - value contained non-alphabetic characters
+2026-01-24 17:56:31.665 [main] WARN  AUDIT - Security: Invalid characters in firstName - value contained non-alphabetic characters
+2026-01-24 17:56:31.665 [main] WARN  AUDIT - Security: XSS pattern detected in firstName - input rejected
 ]]></system-out>
   </testcase>
-  <testcase name="testValidateName_Null" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
+  <testcase name="testValidateName_Null" classname="com.example.contact.ContactValidatorTest" time="0"/>
   <testcase name="testValidateAddress_XSSPrevention" classname="com.example.contact.ContactValidatorTest" time="0.002">
-    <system-out><![CDATA[2026-01-24 16:33:20.386 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
-2026-01-24 16:33:20.387 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
-2026-01-24 16:33:20.387 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
-2026-01-24 16:33:20.387 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
+    <system-out><![CDATA[2026-01-24 17:56:31.667 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
+2026-01-24 17:56:31.668 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
+2026-01-24 17:56:31.668 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
+2026-01-24 17:56:31.669 [main] WARN  AUDIT - Security: XSS pattern detected in address - input rejected
 ]]></system-out>
   </testcase>
-  <testcase name="testValidatePhone_Blank" classname="com.example.contact.ContactValidatorTest" time="0"/>
-  <testcase name="testValidatePhone_Valid" classname="com.example.contact.ContactValidatorTest" time="0"/>
+  <testcase name="testValidatePhone_Blank" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
+  <testcase name="testValidatePhone_Valid" classname="com.example.contact.ContactValidatorTest" time="0.001"/>
 </testsuite>
