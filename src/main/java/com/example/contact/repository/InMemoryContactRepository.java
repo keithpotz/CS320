@@ -7,16 +7,17 @@
  */
 package com.example.contact.repository;
 
-import com.example.contact.Contact;
-import com.example.contact.exception.ResourceLimitException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.example.contact.Contact;
+import com.example.contact.exception.ResourceLimitException;
 
 /**
  * Thread-safe in-memory implementation of the IContactRepository interface.
@@ -61,6 +62,11 @@ public class InMemoryContactRepository implements IContactRepository {
         }
     }
 
+    /**
+     * Finds a contact by its unique ID.
+     * @param contactId the contact ID to search for
+     * @return an Optional containing the contact if found, empty otherwise
+     */
     @Override
     public Optional<Contact> findById(String contactId) {
         if (contactId == null) {
@@ -73,6 +79,11 @@ public class InMemoryContactRepository implements IContactRepository {
         return result;
     }
 
+    /**
+     * Checks if a contact exists with the given ID.
+     * @param contactId the contact ID to check
+     * @return true if a contact with the given ID exists, false otherwise
+     */
     @Override
     public boolean existsById(String contactId) {
         if (contactId == null) {
@@ -81,6 +92,12 @@ public class InMemoryContactRepository implements IContactRepository {
         return contacts.containsKey(contactId);
     }
 
+    /**
+     * Deletes a contact by its ID.
+     * @param contactId the ID of the contact to delete
+     * @return true if the contact was deleted, false if not found
+     * 
+     */
     @Override
     public boolean deleteById(String contactId) {
         if (contactId == null) {
@@ -101,12 +118,20 @@ public class InMemoryContactRepository implements IContactRepository {
         return false;
     }
 
+    /**
+     * Returns all contacts in the repository.
+     * @return a list of all contacts
+     */
     @Override
     public List<Contact> findAll() {
         logger.debug("Finding all contacts, count: {}", contacts.size());
         return new ArrayList<>(contacts.values());
     }
 
+    /**
+     * Returns the total number of contacts in the repository.
+     * @return the count of contacts
+     */
     @Override
     public int count() {
         return contacts.size();

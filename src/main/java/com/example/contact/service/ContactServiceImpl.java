@@ -86,6 +86,15 @@ public class ContactServiceImpl implements IContactService {
         logger.info("Contact added successfully: ID={}", contact.getContactId());
     }
 
+    /**
+     * Deletes a contact by its ID.
+     * @param contactId the ID of the contact to delete
+     * @throws ContactNotFoundException if the contact does not exist
+     * @throws ContactValidationException if the contactId is null or blank
+     * @throws ResourceLimitException if the system reaches its resource limit
+     * @throws IllegalArgumentException if any of the fields are invalid during update
+     * 
+     */
     @Override
     public void deleteContact(String contactId) {
         logger.debug("Attempting to delete contact: {}", contactId);
@@ -105,6 +114,19 @@ public class ContactServiceImpl implements IContactService {
         logger.info("Contact deleted: ID={}", contactId);
     }
 
+    /**
+     * Updates a contact's information.
+     * @param contactId the ID of the contact to update
+     * @param firstName the new first name (optional)
+     * @param lastName the new last name (optional)
+     * @param phone the new phone number (optional)
+     * @param address the new address (optional)
+     * @throws ContactValidationException if the input is invalid during update
+     * @throws ContactNotFoundException if the contact does not exist
+     * @throws ResourceLimitException if the system reaches its resource limit
+     * @throws IllegalArgumentException if any of the fields are invalid during update
+     * 
+     */
     @Override
     public void updateContact(String contactId, String firstName, String lastName, String phone, String address) {
         logger.debug("Attempting to update contact: {}", contactId);
@@ -154,6 +176,11 @@ public class ContactServiceImpl implements IContactService {
         }
     }
 
+    /**
+     * Retrieves a contact by its ID.
+     * @param contactId the ID of the contact to retrieve
+     * @return the contact object, or null if not found
+     */
     @Override
     public Contact getContact(String contactId) {
         logger.debug("Retrieving contact: {}", contactId);
@@ -166,6 +193,10 @@ public class ContactServiceImpl implements IContactService {
         return repository.findById(contactId).orElse(null);
     }
 
+    /**
+     * Retrieves all contacts.
+     * @return a list of all contacts
+     */
     @Override
     public List<Contact> getAllContacts() {
         logger.debug("Retrieving all contacts");
