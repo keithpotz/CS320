@@ -1,2 +1,13 @@
-com\example\contact\Contact.class
+com\example\contact\exception\ContactNotFoundException.class
+com\example\contact\repository\IContactRepository.class
 com\example\contact\ContactService.class
+com\example\contact\ContactBuilder.class
+com\example\contact\exception\ContactException.class
+com\example\contact\service\IContactService.class
+com\example\contact\Contact.class
+com\example\contact\service\ContactServiceImpl.class
+com\example\contact\repository\InMemoryContactRepository.class
+com\example\contact\exception\DuplicateContactException.class
+com\example\contact\validation\ContactValidator.class
+com\example\contact\exception\ContactValidationException.class
+com\example\contact\exception\ResourceLimitException.class

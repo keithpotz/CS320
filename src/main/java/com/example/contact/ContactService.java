@@ -4,6 +4,9 @@
  * Java Contact
  * December 8, 2024
  * 
+ * Updated: January 2026 - Added exception handling for contact operations
+ * 
+ * 
  * 
  * */
 
